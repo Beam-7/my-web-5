@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <!-- Particles background -->
+  <div id="particles-js"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 60,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": { "value": "#ffffff" },
+      "shape": {
+        "type": "circle",
+        "stroke": { "width": 0, "color": "#000000" }
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": true,
+        "anim": { "enable": false }
+      },
+      "size": {
+        "value": 3,
+        "random": true
+      },
+      "line_linked": {
+        "enable": false
+      },
+      "move": {
+        "enable": true,
+        "speed": 1.5,
+        "direction": "none",
+        "random": true,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": { "enable": true, "mode": "repulse" },
+        "onclick": { "enable": true, "mode": "push" }
+      },
+      "modes": {
+        "repulse": { "distance": 100 },
+        "push": { "particles_nb": 4 }
+      }
+    },
+    "retina_detect": true
+  });
+</script>
+
+<body>
+  <div class="happy__birthday">
+    <p class="subtitle">have a good day</p>
+    <div class="cake" >🎂🎂🎂</div>
+    <div class="balloons">
+        <span class="balloon">🎊</span>
+        <span class="balloon">🎈</span>
+        <span class="balloon">🎁</span>
+      <span class="balloon">🎈</span>
+      <span class="balloon">🎊</span>
+    </div>
+  
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta chareset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"
+            <meta http-equiv="X-AU-Compatible" content="ie=edge">
+            <title>basic img tag</title>
+        </head>
+        <body>
+          <div class="image-row">
+            <img src="481254077_1536644647533821_5540261150229416182_n.jpg" class=balloon width=130 hspace=20 vspace=5 border=3 " NIM " srcset=""> 
+            <img src="480970339_1536644654200487_1198022014373895796_n.jpg" class=balloon width=130 hspace=20 vspace=5 border=3 " NIM " srcset=""> 
+          </div>
+          </body>
+          </html>
+          
+          
+          <h1>Happy Birthday <span class="highlight">nim!</span></h1> 
+          <h2> 31st of May </h2>
+    
+
+<!-- ปุ่มเดิมที่คุณมี -->
+<button onclick="playSong()" class="my-button">🥳 Play song 🎵 </button>
+
+<!-- เพลง -->
+<audio id="bdSong" src="happy-birthday-334876.mp3"></audio>
+<canvas id="confetti-canvas"></canvas>
+  
+
+  <audio id="bdSong" loop>
+    <source src="happy-birthday-334876.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+<script>
+  function playSong() {
+    const song = document.getElementById("bdSong");
+    song.play();
+
+    // ຍິງພຸ 5 ເທື່ອ
+    confetti({
+      particleCount: 150,
+      spread: 70,
+      origin: { y: 1 }
+    });
+
+    setTimeout(() => {
+      confetti({
+        particleCount: 150,
+        spread: 90,
+        origin: { y: 0.9 }
+      });
+    }, 500);
+
+    setTimeout(() => {
+      confetti({
+        particleCount: 150,
+        spread: 110,
+        origin: { y: 0.8 }
+      });
+    }, 1000);
+
+    setTimeout(() => {
+      confetti({
+        particleCount: 150,
+        spread: 130,
+        origin: { y: 0.7 }
+      });
+    }, 1000);
+
+    setTimeout(() => {
+      confetti({
+        particleCount: 150,
+        spread: 150,
+        origin: { y: 0.6 }
+      });
+    }, 1000);
+  }
+</script>
+
+
